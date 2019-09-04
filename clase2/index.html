@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./css/js/script.js"></script>
+    <title>Controles</title>
+
+ 
+
+</head>
+<body>
+    <form action="./pagina2.html" method="GET">
+    <fieldset style="background:rgb(202, 224, 207)">
+        <legend>
+            Datos Personales
+        </legend>
+        <div>
+            <label for="txtNombre">Nombre:</label>
+            <input type="text" id"txtNombre" name "nombre" required>
+        </div>
+        <div>
+            <label for="txtclave">Contraseña:</label>
+            <input type="text" id"txtclave" name "clave"required title="Pasword" placeholder="Ingrese aqui">
+        </div>
+        <div>
+            <label for="txtemail">email:</label>
+            <input type="email" id"txtemail" name "email" required>
+        </div>
+        <div>
+            <label for="txtedad">Edad:</label>
+            <input type="range" id"txtedad" name "edad" min="23" max="65" value="18">
+        </div>
+
+        <div>
+            <label for="cboPais">Pais:</label>
+            <select name="pais" id="cboPais">
+                
+                <optgroup label="America">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Chile">Chile</option>
+
+                </optgroup>
+                <optgroup label="España">
+                        <option value="España" >España</option>
+                        <option value="Italia">Italia</option>
+                        <option value="Francia">Francia</option>
+
+                </optgroup>
+            </select>
+        </div>
+
+        <input type="hidden" name="">
+
+        <fieldset >
+            <legend>
+                Genero
+            </legend>
+            <input type="radio" name="sexo" id="rdoMasculino"><label for="rdoMasculino">Masculino</label>
+            <input type="radio" name="sexo" id="rdoFemenino" checked><label for="rdoFemenino">Femenino</label>
+        </fieldset>
+        <fieldset >
+                <legend>
+                    Hobbies
+                </legend>
+                <input type="checkbox" id="chkEsqui"><label for="chkEsqui">Esqui</label>
+                <input type="checkbox" id="chkBicicleta" ><label for="chkBicicleta">Bicicleta</label>
+                <input type="checkbox" id="chkKayak" checked><label for="chkKayak">Kayak</label>
+            </fieldset>
+
+            <label for="taComentario">Comentarios:</label>
+            <div>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <input type="submit" value="Login">
+            <input type="reset" value="Limpiar Formulario">
+        <input type="submit" value="Login">
+        <button>Enviar</button>
+    </fieldset>
+    </form>
+    <button id="btnsaludar"> saludar</button>
+</body>
+</html>
