@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="listaNombres">
+
+  </ul>
+
+  <script>
+          let array=["juan", "ana", "julia","adrian", "lucia"];
+
+        let numeros =[2,4,3,5,6];
+        let cuadrados;
+
+        let personas =[
+
+            { nombre: "jose", edad: 30},
+            { nombre: "daniel", edad: 20},
+            { nombre: "juan", edad: 18},
+            { nombre: "abel", edad: 43},
+
+        ];
+
+        let nombres = personas.map( p=> p.nombre);
+        console.log(nombres);
+
+        nombres.forEach(nombre => {
+          let item= document.createElement('li');
+          item.textContent= nombre;
+
+          document.getElementById('listaNombres').appendChild(item);
+        });
+
+        //cuadrados =numeros.map(elemento=> elemento>2); // se comporta como el forEach pero lo que devuelve un nuevo array
+
+        //console.log(cuadrados);
+
+
+  </script>
+
+</body>
+</html>

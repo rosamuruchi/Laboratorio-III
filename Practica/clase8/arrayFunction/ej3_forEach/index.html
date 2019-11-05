@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+          /*let array=["juan", "ana", true, 23, [1,2,3], {nombre: "jorge",edad: 18}];
+          let numeros=[1,2,3,4,5];
+
+          array.forEach( elemento => console.log(elemento));
+
+          //forma1
+          array.forEach(mostrar);
+
+          function mostrar(algo)
+          {
+            console.log(algo);
+          }
+
+          //forma2
+          array.forEach(function(algo){
+            console.log(algo);
+          });
+
+          //forma3  la forma mas elegante para hacer
+          array.forEach(elemento => console.log(elemento));
+
+          //forma4
+
+          let cuadrados=[];
+
+          let retorno= numeros.forEach((a,b,c) => {
+            console.log(a);
+            console.log(b);
+            console.log(c);
+          });
+
+          //*/
+
+
+          let nombres=["juan", "ana", "jorge","adrian"];
+          let numeros2=[1,2,3,4,5];
+
+          console.log(nombres.sort()); //me los ordena por orden codigo ascii
+          console.log(numeros2.sort(  (a,b) => a-b ));
+
+          let personas = [
+
+                  {nombre: "rosalia", edad:30},
+                  {nombre: "juana", edad:25},
+                  {nombre: "andres", edad:20},
+                  {nombre: "beto", edad:18}
+
+          ];
+
+          console.log(personas);
+          personas.sort(  (p1,p2)=> (p1.edad - p2.edad));
+          console.log(personas);
+
+  </script>
+
+</body>
+</html>

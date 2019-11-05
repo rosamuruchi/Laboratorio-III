@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>//reduce
+          //let nombres=["juan", "ana", "julia","adrian", "lucio"];
+
+        let numeros =[1,2,3,4,5];
+        let dobles;
+
+        let personas =[
+
+            { nombre: "jose", edad: 30},
+            { nombre: "daniel", edad: 20},
+            { nombre: "juan", edad: 18},
+            { nombre: "abel", edad: 43},
+
+        ];
+
+        let suma;
+        //suma=numeros.reduce( (acumulador, elemnto)=> acumulador * elemnto);  //paramActual, paramPost, Vector
+    //devuelve el factorial de 5! =120
+        suma=personas.reduce((acumulador,persona)=> acumulador + persona.edad);
+       console.log(suma);
+
+
+
+
+  </script>
+
+</body>
+</html>

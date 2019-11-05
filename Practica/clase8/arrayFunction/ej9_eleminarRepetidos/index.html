@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>//reduce
+
+        let nombres=["juan", "ana", "julia","adrian", "lucio"];
+        let numeros =[1,2,3,4,5,1,5,1];
+        let dobles;
+
+        let personas =[
+            { nombre: "jose", edad: 30, sexo: "m"},
+            { nombre: "daniel", edad: 20, sexo: "m"},
+            { nombre: "juana", edad: 18, sexo: "f"},
+            { nombre: "abel", edad: 43, sexo: "m"},
+        ];
+
+        //let x= new Set(numeros); // set es un objeto que no admite  valoress repetidos
+
+       // console.log(x);
+//convierto el objeto en un array
+
+        let sinRepetir = [... new Set(numeros)]; //[...x];
+
+        console.log(sinRepetir);
+
+        Array.prototype.unique = function() {return [... new Set (this)]};
+        console.log(numeros.unique ());
+
+
+  </script>
+
+</body>
+</html>
