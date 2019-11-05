@@ -1,0 +1,7 @@
+Clase BootStrap
+en la carpeta de trabajo: entrar en descargar bootstarp 4
+luego en el html en el body : b4 y listo
+
+ej2:
+entrar en la pg bootstrap y descargar
+descomprimir todo y aparece 2 carpetas de CSS Y JS: 
