@@ -1,0 +1,27 @@
+------------
+LOCALSTORAGE
+------------
+
+setItem ("anuncios", Json.stringify(anuncios));
+getItem("anuncios");
+
+-----------
+TYPE-SCRIPT
+-----------
+
+en el archivo nos paramos y abrimos consola y pegamos: npm install -g typescript
+
+para complilar Typescrip solo en comando : tsc hello.ts
+lo incluyo en el HTML y me fijo en el navegador y deberia aparecer en la consola.
+
+Ejecutamos: tsc --init
+y me agrega un archivo json en el que podes hacer todas las configuraciones al typescript.
+
+Ejecutamos : tsc -w
+Vemos como compila y si por algun motivo colocamos un error al guardar los combios : Nos salta el ERROR!
+
+
+Ejecutamos: souce map
+output.js.map (archivo generado)
+
+
